@@ -1,0 +1,309 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+body{
+    background-color: #0B1A25;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:18px;
+    line-height: 1.5rem;
+
+}
+
+main{
+    background-color: #96B2BE;
+    width: 80vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 8px solid #ACCAFC;
+    border-radius: 10px;
+
+}
+
+.container h2{
+    text-align: center;
+    text-decoration: underline; /* Underline text */
+    text-decoration-color:rgb(209, 237, 238); /* Underline color */
+    color: white;
+    padding:10px;
+    
+
+}
+.webCache h3{
+    text-align: center;
+    text-decoration: underline; /* Underline text */
+    text-decoration-color:rgb(209, 237, 238); /* Underline color */
+    color: white;
+    padding:10px;
+    font-size: 30px;
+}
+
+
+
+.team-container {
+    background-color: #eaf6f6; /* Light teal background */
+    border: 2px solid #007acc; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 90%;
+}
+
+/* Grid Layout for Team Members */
+.post {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible columns */
+    gap: 20px; /* Space between items */
+    
+}
+
+/* Individual Team Member Block */
+.container figure {
+    text-align: center; /* Center content inside each block */
+    border-right: 5px solid  #4B788F;
+    border-left:5px solid  #4B788F;
+    border-bottom:5px solid #1A475C ;
+    border-top: 5px solid #1A475C;   
+
+   
+    
+}
+
+.post .post-content{
+    border: 1px solid #ddd; /* Border for separation */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+
+}
+
+/* Image Styling */
+figure img {
+    width: 100%; /* Make images responsive */
+    max-width: 150px; /* Limit maximum image size */
+    border-radius: 5px; /* Rounded image corners */
+    margin-bottom: 10px;
+    
+
+}
+
+#firstPic img{
+    height:130px;
+    
+}
+/* Caption Styling */
+figcaption {
+    font-family: Arial, sans-serif; /* Use a clean font */
+    font-size: 14px;
+    color: black; /* Dark text color */
+    line-height: 1.5; /* Improve readability */
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #444; /* Slightly dark text color */
+
+}
+
+
+
+
+
+#WebPic img{
+    width: 120%;
+    max-width: 500px;
+    max-height: 200px;
+}
+
+.webCache .question { /* Target paragraphs with the 'question' class */
+    display: flex; /* Align the content horizontally */
+    align-items: center; /* Vertically center the content */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+
+
+/* Ensure the images are responsive */
+#WebPic img, #WebPic2 img {
+    width: 100%; /* Make sure images take up the full width of the container */
+    border-radius: 5px; /* Optional: add rounded corners */
+    max-width: 200px; /* Limit the size of the images */
+}
+
+#blog{
+    background-color: #1A475C;
+    padding-bottom: 20px;
+
+
+}
+
+header.primary {
+    padding:40px 20px;
+    display: flex ;
+    background-image: url('../img/tech.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-bottom:3px solid #B4B8B9;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+
+
+header.primary h1{
+    color:white;
+    margin:10px 0;
+    padding-bottom: 20px;
+}
+
+
+header.primary h1 a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px #000;
+}
+
+
+
+header.primary div.hgroup{
+    width:70%;
+}
+header.primary nav{
+    width:auto;
+}
+header.primary nav ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    
+}
+
+header.primary nav ul li{
+    margin-bottom:10px;
+
+}
+header.primary nav ul li a{
+    border:1px solid #0B1A25;
+    border-right: 10px solid #0B1A25;
+    border-left:10px solid #0B1A25;
+    border-radius: 15px 0;
+    color:white; 
+    display: block;
+    background-color: rgba(0,0,0, .6);
+    padding:10px 10px 10px 0;
+    text-align: center;
+    transition:.5s;
+    font-size: .9;
+    text-decoration: none;
+    justify-items: right;
+
+}
+header.primary nav ul li a:hover{
+    background-color: rgba(0,0,0, .9);
+    text-decoration:underline;
+    
+}
+
+#content{
+    line-height: 1.8rem;
+    
+}
+
+
+#blog article.post{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+   
+}
+
+#colophon{
+    text-align: center;
+    padding:20px;
+    background-color:#D2D4FC;
+    background-image: url("../img/tech.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white;
+
+}
+
+
+
+
+
+#WebPic1 img{
+    max-width: 50%; 
+    max-height: 300px; 
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 250px;
+    margin-right: 200px;
+
+}
+
+
+
+#what-is-web-caching{
+    border-bottom: 1px solid #0B1A25;
+
+
+}
+
+#webcacheNav figure {
+    justify-items: left;
+    margin-left: 20px;
+}
+
+#webcacheNav p{
+    margin-left: 20px;
+    margin-right: 20px;
+    color:white;
+}
+
+.webCache  nav ul li{
+    color:white;
+    font-size: 20px;
+
+}
+
+.webCache nav ol li{
+    color:white;
+    font-size: 20px;
+}
+
+#WebPic2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:200px;
+    height:150px;
+}
+
+#applications {
+    border-bottom: 1px solid #0B1A25;
+}
+
+#types-of-web-caching{
+    border-bottom: 1px solid #0B1A25;
+
+}
+
